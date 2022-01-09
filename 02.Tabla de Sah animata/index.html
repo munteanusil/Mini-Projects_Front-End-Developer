@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <title>
+        Chess Board
+    </title>
+</head>
+
+<body>
+    <h1>
+        Chess Board
+    </h1>
+    <br>
+    <hr style="height: 2px; background: #000;">
+    <br>
+    <table>
+        <tr>
+            <td class="pos">
+                8
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/tura_nergu.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="cal_blk_2" class="img">
+                    <img src="Piese_Sah/cal_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/negun_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div class="img">
+                    <img src="Piese_Sah/regina_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/rege_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div class="img">
+                    <img src="Piese_Sah/negun_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="cal_blk_1" class="img">
+                    <img src="Piese_Sah/cal_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div class="img">
+                    <img src="Piese_Sah/tura_nergu.png" style="width: 100%;">
+                </div>
+            </td>
+        </tr>
+        <tr id="pioni">
+            <td class="pos">
+                7
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="pion_blk_2" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="pion_blk_2" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="pion_blk_2" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="pion_blk_2" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                6
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                5
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                4
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                3
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                2
+            </td>
+            <td>
+                <div id="pion_wht_1" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_wht_2" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="pion_wht_1" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_wht_2" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="pion_wht_1" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_wht_2" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="pion_wht_1" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_wht_2" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                1
+            </td>
+            <td class="blk">
+                <div class="img">
+                    <img src="Piese_Sah/tura_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="cal_wht_1" class="img">
+                    <img src="Piese_Sah/cal_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div class="img">
+                    <img src="Piese_Sah/negun_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/regina_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div class="img">
+                    <img src="Piese_Sah/rege_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/negun_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="cal_wht_2" class="img">
+                    <img src="Piese_Sah/cal_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/tura_alb.png" style="width: 100%;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+
+            </td>
+            <td class="pos">
+                A
+            </td>
+            <td class="pos">
+                B
+            </td>
+            <td class="pos">
+                C
+            </td>
+            <td class="pos">
+                D
+            </td>
+            <td class="pos">
+                E
+            </td>
+            <td class="pos">
+                F
+            </td>
+            <td class="pos">
+                G
+            </td>
+            <td class="pos">
+                H
+            </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <hr style="height: 2px; background: #000;">
+    <br>
+
+
+    <table>
+        <tr>
+            <td class="pos">
+                8
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="tura_blk_1" class="img">
+                    <img src="Piese_Sah/tura_nergu.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="tura_blk_2" class="img">
+                    <img src="Piese_Sah/tura_nergu.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="rege_blk" class="img">
+                    <img src="Piese_Sah/rege_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+
+            </td>
+        </tr>
+        <tr id="pioni">
+            <td class="pos">
+                7
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="regina_blk" class="img">
+                    <img src="Piese_Sah/regina_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                6
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="cal_blk_1" class="img">
+                    <img src="Piese_Sah/cal_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="nebun_blk_1" class="img">
+                    <img src="Piese_Sah/negun_negru.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="pion_blk_1" class="img">
+                    <img src="Piese_Sah/pion_negru.png" style="width: 100%;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                5
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+                <div id="cal_wht_1" class="img">
+                    <img src="Piese_Sah/cal_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                4
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+                <div id="pion_wht_1" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="regina_wht" class="img">
+                    <img src="Piese_Sah/regina_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                3
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="pion_wht_1" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                2
+            </td>
+            <td>
+                <div id="pion_wht_1" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_wht_2" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="pion_wht_2" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div id="nebun_wht_1" class="img">
+                    <img src="Piese_Sah/negun_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="pion_wht_2" class="img">
+                    <img src="Piese_Sah/pion_alb.png" style="width: 100%;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+                1
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+
+            </td>
+            <td>
+
+            </td>
+            <td class="blk">
+                <div id="tura_wht_1" class="img">
+                    <img src="Piese_Sah/tura_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+                <div class="img">
+                    <img src="Piese_Sah/tura_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td class="blk">
+                <div id="rege_wht" class="img">
+                    <img src="Piese_Sah/rege_alb.png" style="width: 100%;">
+                </div>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="pos">
+
+            </td>
+            <td class="pos">
+                A
+            </td>
+            <td class="pos">
+                B
+            </td>
+            <td class="pos">
+                C
+            </td>
+            <td class="pos">
+                D
+            </td>
+            <td class="pos">
+                E
+            </td>
+            <td class="pos">
+                F
+            </td>
+            <td class="pos">
+                G
+            </td>
+            <td class="pos">
+                H
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr style="height: 2px; background: #000;">
+    <br>
+    <img src="chess.jpg" style="display: block; margin-left: auto; margin-right: auto; max-width: 80%; width: 550px;">
+</body>
+
+</html>

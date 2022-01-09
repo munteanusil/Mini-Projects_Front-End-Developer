@@ -1,0 +1,186 @@
+body {
+	background: linear-gradient(120deg, azure, hsl(180 100% 50%), azure);
+	height: 100vh;
+	text-align: center;
+	color: brown;
+}
+
+div {
+}
+
+
+
+
+
+
+
+
+.container {
+	background: lightgray;
+	height: 40vh;
+	width: 100vw;
+	display: flex; /* transforma containerul in container flexibil
+					putem aplica proprietatile de flexbox*/
+	flex-direction: column; /* row e valoarea default, mai poate lua
+						urmatoarele valori:
+						row-reverse, column, column-reverse */
+	/*!!! 
+		flex-direction: row, are axa principala o-x (orizontala) iar axa secundara o-y (verticala)!
+		flex-direction: column, are axa principala o-y (verticala) iar axa secundara o-x (orizontala)!
+	*/					
+						
+	justify-content: flex-start; /* flex-start este valoarea default, mai 
+								poate lua urmatoarele valori:
+								flex-end, center,  space-around, space-evenly*/						
+	/* !!! justify-content aranjeaza containerele fie in linie daca flex-direction: row, 
+	fie in coloana daca flex-direction: column. Aliniaza elementele pe axa principala*/
+	
+	align-items: flex-start; /* flex-start este valoarea default, mai 
+								poate lua urmatoarele valori:
+								flex-end, center, baseline*/
+	/* !!! align-items aranjeaza containerele pe axa secundara */
+	/* baseline aranjeaza containerele dupa alinierea literelor pe aceeasi linie */
+	
+	flex-wrap: no-wrap; /* flex-wrap impcheteaza containerele in linie sau coloana
+						no-wrap este setarea default, wrap muta in rand nou
+						containerele care nu incap in containerul parinte, 
+						wrap-reverse le inverseaza pozitia*/
+}
+
+.containeri {
+	background: gray;
+	height: 40vh;
+	width: 100vw;
+	display: flex; /* transforma containerul in container flexibil
+					putem aplica proprietatile de flexbox*/
+	flex-direction: row; /* row e valoarea default, mai poate lua
+						urmatoarele valori:
+						row-reverse, column, column-reverse */
+	/*!!! 
+		flex-direction: row, are axa principala o-x (orizontala) iar axa secundara o-y (verticala)!
+		flex-direction: column, are axa principala o-y (verticala) iar axa secundara o-x (orizontala)!
+	*/					
+						
+	justify-content: flex-start; /* flex-start este valoarea default, mai 
+								poate lua urmatoarele valori:
+								flex-end, center,  space-around, space-evenly*/						
+	/* !!! justify-content aranjeaza containerele fie in linie daca flex-direction: row, 
+	fie in coloana daca flex-direction: column. Aliniaza elementele pe axa principala*/
+	
+	align-items: flex-start; /* flex-start este valoarea default, mai 
+								poate lua urmatoarele valori:
+								flex-end, center, baseline*/
+	/* !!! align-items aranjeaza containerele pe axa secundara */
+	/* baseline aranjeaza containerele dupa alinierea literelor pe aceeasi linie */
+	
+	flex-wrap: no-wrap; /* flex-wrap impcheteaza containerele in linie sau coloana
+						no-wrap este setarea default, wrap muta in rand nou
+						containerele care nu incap in containerul parinte, 
+						wrap-reverse le inverseaza pozitia*/
+}
+
+.copil-1 {
+	background: blue;
+	font-size: 2rem;
+	width: 100%;
+	height: 50%;
+	flex-shrink: 1; /* flex-wrap determina raportul de micsorare fata
+					de elementul alaturat */
+}
+
+.copil-2 {
+	background: yellow;
+	font-size: 2rem;
+	width: 100%;
+	height: 50%;
+	flex-shrink: 1;
+}
+
+.copil-3 {
+	background: red;
+	font-size: 2rem;
+	width: 100%;
+	height: 50%;
+	flex-shrink: 1;
+}
+/*
+.copil-4 {
+	background: salmon;
+	width: 100%;
+	height: 50%;
+	flex-shrink: 1;
+}
+
+.copil-5 {
+	background: yellow;
+	width: 100%;
+	height: 50%;
+}
+
+.copil-6 {
+	background: violet;
+	width: 100%;
+	height: 50%;
+	flex-shrink: 2;
+}
+
+*/
+
+.copil-1i {
+	background: dodgerblue;
+	font-size: 2rem;
+	height: 50%;
+	flex-grow: 1;  /* flex-grow mareste elementul cu fractie din latimea
+					neocupata a elementului parinte */
+	
+}
+
+.copil-2i {
+	background: orangered;
+	font-size: 2rem;
+	height: 50%;
+	flex-grow: 1;
+	
+}
+
+
+.copil-3i {
+	background: dodgerblue;
+	font-size: 2rem;
+	height: 50%;
+	flex-grow: 2;
+	
+}
+
+.copil-4i {
+	background: orangered;
+	font-size: 2rem;
+	height: 50%;
+	flex-grow: 3;
+	
+}
+
+
+.copil-5i {
+	background: dodgerblue;
+	font-size: 2rem;
+	height: 50%;
+	flex-grow: 1;
+	
+}
+
+.copil-6i {
+	background: orangered;
+	font-size: 2rem;
+	height: 50%;
+	flex-grow: 2;
+	
+}
+
+
+
+
+
+
+
+

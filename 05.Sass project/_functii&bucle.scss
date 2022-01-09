@@ -1,0 +1,60 @@
+@mixin stylediv($w, $h, $bo, $br, $m, $mb, $mt, $bg) {
+    width: $w;
+    height: $h;
+    border: $bo;
+    border-radius: $br;
+    margin: $m;
+    margin-bottom: $mb;
+    margin-top: $mt;
+    background: $bg;
+}
+
+@mixin cerc($latura, $bg, $cerc: false) {
+    width: $latura;
+    height: $latura;
+    background: $bg;
+    @if $cerc {     // conditia if else. If verifica daca conditia este 
+                    // adevarata, else este executat cand if este fals.
+        border-radius: $divcerc;
+    }
+    @else {
+        border-radius: $divrotunjor;
+    }
+}
+
+// bucla while - repeta un set de actiuni in functie de conditia iteratiilor
+
+$indice: 1; // declaram variabila $indice si o initializam cu valoare numerica 1
+@while $indice < 6 {
+    .p-#{$indice} {font-size: $indice * 1rem; 
+        background: hsl($indice * 60, 100%, 50%);
+        width: $indice * 110px;
+        margin-bottom: $indice * 10px;
+    }
+    $indice: $indice + 1;
+}
+
+@mixin divborder($x, $bg, $val) {
+    background: $bg;
+    width: $x;
+    height: $x;
+    @if $val == subtire {
+        border: 3px solid darkorchid;
+        border-radius: 15%;
+    }
+    @else if $val == gros {
+        border: 20px solid darkblue;
+        border-radius: 30%;
+    }
+    @else if $val == ascutit {
+        border: 5px solid darkorange;
+        border-radius: 1%;
+    }
+    @else if $val == rotunjel {
+        border: 15px solid salmon;
+        border-radius: 40%;
+    }
+    @else {
+        border: 1px solid black;
+    }
+}
